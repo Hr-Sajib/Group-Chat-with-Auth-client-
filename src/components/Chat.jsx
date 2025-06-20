@@ -20,7 +20,7 @@ function Chat() {
       return;
     }
 
-    socketRef.current = io('http://localhost:5100', {
+    socketRef.current = io('https://taskflow-smt.up.railway.app', {
       withCredentials: true,
       auth: {
         token: accessToken,
